@@ -2,50 +2,24 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manick Nguewouo | Développeur Full Stack & IA</title>
-  <meta
-    name="description"
-    content="Portfolio professionnel de Nguewouo Mbakop Manick, Développeur Full Stack et ingénieur orienté IA basé à Yaoundé, Cameroun."
-  />
-  <meta
-    name="keywords"
-    content="Développeur Full Stack, Laravel, Symfony, React, Vue, Ruby on Rails, .NET, IA, Cameroun, Portfolio"
-  />
-  <meta name="author" content="Nguewouo Mbakop Manick" />
-
-  <meta property="og:title" content="Manick Nguewouo | Développeur Full Stack & IA" />
-  <meta
-    property="og:description"
-    content="Portfolio professionnel de Manick : expériences, projets, compétences et contact."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og-cover.jpg" />
-
+  <meta name="description" content="Portfolio professionnel de Nguewouo Mbakop Manick, Développeur Full Stack et ingénieur orienté IA basé à Yaoundé, Cameroun." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="site-header" id="top">
     <div class="container navbar">
-      <a href="#top" class="logo">MN<span>.</span></a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
-        <i class="fa-solid fa-bars"></i>
+      <a href="#top" class="logo">MN<span class="logo-dot">.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
       </button>
-
       <nav class="nav" id="navMenu">
         <a href="#about">À propos</a>
         <a href="#experience">Expériences</a>
@@ -58,415 +32,583 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <span class="eyebrow">Disponible pour opportunités & collaborations</span>
-          <h1>Nguewouo Mbakop Manick</h1>
-          <h2>Développeur Full Stack & ingénieur orienté IA</h2>
-          <p class="hero-description">
-            Je conçois et développe des applications web robustes, utiles et maintenables,
-            avec une expérience sur Laravel, Symfony, React, Vue.js, Ruby on Rails, .NET
-            et des environnements techniques liés aux systèmes métier, API et e-learning.
-          </p>
 
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Disponible · Yaoundé, Cameroun
+          </div>
+          <h1 class="hero-name">Nguewouo<br><em>Mbakop</em><br>Manick</h1>
+          <p class="hero-role">Développeur Full Stack <span class="role-sep">·</span> Ingénieur IA</p>
+          <p class="hero-desc">
+            Je conçois et développe des applications web robustes, maintenables et à fort impact.
+            Spécialisé en Laravel, Symfony, React, Vue.js, Ruby on Rails et .NET — avec une expertise
+            acquise en e-learning, e-commerce, API et systèmes d'entreprise.
+          </p>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Voir les projets</a>
-            <a href="assets/manick-cv.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
-              Voir le CV
+            <a href="#projects" class="btn btn-glow">Voir les projets <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="assets/manick-cv.pdf" class="btn btn-ghost" target="_blank">
+              <i class="fa-solid fa-file-lines"></i> Télécharger le CV
             </a>
           </div>
-
-          <div class="hero-meta">
-            <div class="meta-item">
-              <i class="fa-solid fa-location-dot"></i>
-              <span>Yaoundé, Cameroun</span>
-            </div>
-            <div class="meta-item">
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:nguewouom@gmail.com">nguewouom@gmail.com</a>
-            </div>
-            <div class="meta-item">
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:+237690868185">+237 690 868 185</a>
-            </div>
+          <div class="hero-contacts">
+            <a href="mailto:manick.nguewouo@gmail.com" class="contact-pill">
+              <i class="fa-solid fa-envelope"></i> manick.nguewouo@gmail.com
+            </a>
+            <a href="tel:+237690868185" class="contact-pill">
+              <i class="fa-solid fa-phone"></i> +237 690 868 185
+            </a>
           </div>
         </div>
-
-        <div class="hero-card">
+        <div class="hero-right">
           <div class="profile-card">
-            <div class="profile-avatar">
-              <img src="assets/profile.jpg" alt="Photo de profil de Manick" />
+            <div class="profile-photo-wrap">
+              <img src="assets/profile.png" alt="Manick Nguewouo" class="profile-photo" />
+              <div class="profile-photo-glow"></div>
             </div>
-            <div class="profile-content">
-              <p class="profile-tag">Full Stack Developer</p>
-              <h3>Création de solutions web professionnelles</h3>
-              <p>
-                Développement, maintenance, intégration d’API, outils métier,
-                plateformes web et environnement e-learning.
-              </p>
-              <div class="profile-tech">
-                <span>.NET</span>
-                <span>Laravel</span>
-                <span>Symfony</span>
-                <span>React</span>
-                <span>Vue</span>
-                <span>Ruby on Rails</span>
+            <div class="profile-info">
+              <div class="profile-status">
+                <span class="status-dot"></span> Open to work
+              </div>
+              <h3>Full Stack Developer</h3>
+              <p>Expertise en développement web, LMS, e-learning et systèmes d'entreprise.</p>
+              <div class="profile-tags">
+                <span>.NET</span><span>Laravel</span><span>Symfony</span>
+                <span>React</span><span>Vue.js</span><span>Ruby on Rails</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="hero-scroll-hint">
+        <span>Défiler</span>
+        <div class="scroll-line"></div>
+      </div>
     </section>
 
+    <!-- ABOUT -->
     <section class="section" id="about">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Présentation</span>
-          <h2>À propos</h2>
-        </div>
-
+        <div class="section-label reveal">Présentation</div>
+        <h2 class="section-title reveal">À propos de moi</h2>
         <div class="about-grid">
-          <div class="card">
+          <div class="about-text reveal">
             <p>
-              Développeur Full Stack passionné par la création de produits numériques fiables
-              et utiles, j’ai travaillé sur des applications web dans plusieurs contextes :
-              e-commerce, procédures d’immigration et visa, modélisation d’API, plateformes
-              de formation et développement d’outils métier.
+              Développeur Full Stack passionné par la création de produits numériques fiables et utiles,
+              j'interviens sur des applications web dans des contextes variés : e-commerce, procédures
+              administratives, plateformes de formation, développement d'outils métier et infrastructure réseau.
             </p>
             <p>
-              Mon profil combine expérience pratique en développement web et formation académique
-              en informatique avec spécialisation en intelligence artificielle.
+              Mon profil associe une expérience pratique solide en développement web et une formation académique
+              en informatique avec spécialisation en intelligence artificielle — ce qui me permet d'aborder
+              les problèmes avec autant de rigueur technique que de vision produit.
+            </p>
+            <p>
+              Actuellement en poste chez CECOSDA à Yaoundé, je pilote des projets liés à la transformation
+              digitale, au déploiement de solutions e-learning et à la maintenance d'infrastructures web critiques.
             </p>
           </div>
-
-          <div class="stats-grid">
-            <div class="stat-card">
-              <h3>4+</h3>
-              <p>Expériences majeures</p>
+          <div class="stats-column">
+            <div class="stat-item reveal">
+              <div class="stat-number">4<span>+</span></div>
+              <div class="stat-label">Expériences majeures</div>
             </div>
-            <div class="stat-card">
-              <h3>7+</h3>
-              <p>Technologies fortes</p>
+            <div class="stat-item reveal">
+              <div class="stat-number">8<span>+</span></div>
+              <div class="stat-label">Technologies maîtrisées</div>
             </div>
-            <div class="stat-card">
-              <h3>4+</h3>
-              <p>Projets identifiés</p>
+            <div class="stat-item reveal">
+              <div class="stat-number">6<span>+</span></div>
+              <div class="stat-label">Projets livrés</div>
             </div>
-            <div class="stat-card">
-              <h3>IA</h3>
-              <p>Master en Informatique</p>
+            <div class="stat-item reveal">
+              <div class="stat-number">M2</div>
+              <div class="stat-label">Master Informatique · IA</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="experience">
+    <!-- EXPERIENCE -->
+    <section class="section section-dark" id="experience">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Parcours</span>
-          <h2>Expériences professionnelles</h2>
-        </div>
-
+        <div class="section-label reveal">Parcours</div>
+        <h2 class="section-title reveal">Expériences professionnelles</h2>
         <div class="timeline">
-          <article class="timeline-item reveal">
-            <div class="timeline-date">Mars 2025 — Aujourd’hui</div>
-            <div class="timeline-content">
-              <h3>Technicien Informatique (Symfony & Réseau)</h3>
-              <h4>CECOSDA — Yaoundé, Cameroun</h4>
-              <p>
-                Maintenance des équipements informatiques et réseaux du centre, ainsi que
-                participation aux environnements web liés à Symfony et à l’administration
-                technique.
+
+          <article class="tl-item reveal">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-head">
+                <div>
+                  <h3>Technicien Informatique & Développeur Web</h3>
+                  <p class="tl-company">CECOSDA — Yaoundé, Cameroun</p>
+                </div>
+                <span class="tl-date">Mars 2025 — Présent</span>
+              </div>
+              <p class="tl-desc">
+                Responsable du développement, de la maintenance et du déploiement de solutions web et e-learning
+                pour le centre. Gestion simultanée de plusieurs projets en parallèle, de l'infrastructure réseau
+                aux applications métier.
               </p>
-              <ul>
+              <ul class="tl-list">
+                <li>Développement et maintenance d'applications web (Symfony)</li>
+                <li>Configuration et déploiement du LMS ILIAS pour la formation en ligne</li>
+                <li>Conception, réalisation et maintenance d'applications web e-learning</li>
                 <li>Support et maintenance du parc informatique</li>
-                <li>Intervention sur l’environnement réseau et serveur</li>
-                <li>Travail sur plusieurs projets en parallèle dans l’expérience actuelle</li>
+                <li>Intervention sur l'environnement réseau et serveur</li>
               </ul>
+              <div class="tl-tags">
+                <span>Symfony</span><span>ILIAS LMS</span><span>E-learning</span>
+                <span>Réseau</span><span>Windows Server</span>
+              </div>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">Août 2023 — Décembre 2024</div>
-            <div class="timeline-content">
-              <h3>Développeur Full Stack (Ruby on Rails & Vue.js)</h3>
-              <h4>SYSAIT — Remote</h4>
-              <p>
-                Travail à distance avec l’équipe de recherche du Master et SYSAIT en Italie,
-                autour du développement web avec Ruby on Rails, Postgres, Sidekiq, Redis,
-                Google Drive API et outils Atlassian.
+          <article class="tl-item reveal">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-head">
+                <div>
+                  <h3>Développeur Full Stack (Ruby on Rails & Vue.js)</h3>
+                  <p class="tl-company">SYSAIT — Remote · Italie</p>
+                </div>
+                <span class="tl-date">Août 2023 — Déc. 2024</span>
+              </div>
+              <p class="tl-desc">
+                Collaboration à distance avec l'équipe de recherche du Master et SYSAIT autour du
+                développement web avec Ruby on Rails, Vue.js, Postgres, Sidekiq, Redis et Google Drive API.
               </p>
-              <ul>
+              <ul class="tl-list">
                 <li>Développement de fonctionnalités backend et frontend</li>
-                <li>Collaboration à distance sur un environnement structuré</li>
-                <li>Intégration d’outils et services tiers</li>
+                <li>Intégration d'outils et services tiers (Google Drive API)</li>
+                <li>Collaboration via outils Atlassian (Jira, Bitbucket, Confluence)</li>
               </ul>
+              <div class="tl-tags">
+                <span>Ruby on Rails</span><span>Vue.js</span><span>Postgres</span>
+                <span>Redis</span><span>Sidekiq</span>
+              </div>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">Août 2022 — Août 2023</div>
-            <div class="timeline-content">
-              <h3>Développeur Full Stack (.NET & React JS)</h3>
-              <h4>Cethia Sarl — Dschang, Cameroun</h4>
-              <p>
-                Développement d’applications web et d’API REST en équipe, avec pratiques GitFlow,
-                technologies .NET, React JS, TailwindCSS, JavaScript et Azure.
+          <article class="tl-item reveal">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-head">
+                <div>
+                  <h3>Développeur Full Stack (.NET & React JS)</h3>
+                  <p class="tl-company">Cethia Sarl — Dschang, Cameroun</p>
+                </div>
+                <span class="tl-date">Août 2022 — Août 2023</span>
+              </div>
+              <p class="tl-desc">
+                Développement d'applications web et d'API REST en équipe, avec des pratiques
+                GitFlow, technologies .NET, React JS, TailwindCSS et déploiement Azure.
               </p>
-              <ul>
-                <li>Participation à la construction d’API REST</li>
-                <li>Développement front-end orienté interface utilisateur</li>
-                <li>Travail collaboratif en équipe technique</li>
+              <ul class="tl-list">
+                <li>Construction et maintenance d'API REST</li>
+                <li>Développement frontend orienté expérience utilisateur</li>
+                <li>Travail collaboratif en équipe technique structurée</li>
               </ul>
+              <div class="tl-tags">
+                <span>.NET</span><span>React JS</span><span>TailwindCSS</span>
+                <span>Azure</span><span>GitFlow</span>
+              </div>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">Novembre 2021 — Août 2022</div>
-            <div class="timeline-content">
-              <h3>Développeur Laravel</h3>
-              <h4>Uni2Grow — Dschang, Cameroun</h4>
-              <p>
-                Stage destiné aux meilleurs étudiants en informatique de l’Université de Dschang,
-                avec rôle de développeur et administrateur sur le projet Mountain Women In Code.
+          <article class="tl-item reveal">
+            <div class="tl-marker">
+              <div class="tl-dot"></div>
+            </div>
+            <div class="tl-body">
+              <div class="tl-head">
+                <div>
+                  <h3>Développeur Laravel</h3>
+                  <p class="tl-company">Uni2Grow — Dschang, Cameroun</p>
+                </div>
+                <span class="tl-date">Nov. 2021 — Août 2022</span>
+              </div>
+              <p class="tl-desc">
+                Stage sélectif destiné aux meilleurs étudiants en informatique de l'Université de Dschang.
+                Développeur et administrateur sur le projet Mountain Women In Code.
               </p>
-              <ul>
-                <li>Développement backend Laravel</li>
-                <li>Administration de projet</li>
+              <ul class="tl-list">
+                <li>Développement Fullstack Laravel</li>
+                <li>Administration de projet et gestion d'équipe</li>
                 <li>Utilisation de Jira, Confluence et GitLab</li>
               </ul>
+              <div class="tl-tags">
+                <span>Laravel</span><span>GitLab</span><span>Jira</span><span>Confluence</span>
+              </div>
             </div>
           </article>
+
         </div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section class="section" id="projects">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Portfolio</span>
-          <h2>Projets sélectionnés</h2>
-          <p>
-            Chaque expérience s’appuie sur un ou plusieurs projets. Pour l’expérience actuelle,
-            la présentation est pensée pour pouvoir accueillir plusieurs réalisations au fil du temps.
-          </p>
-        </div>
+        <div class="section-label reveal">Portfolio</div>
+        <h2 class="section-title reveal">Projets sélectionnés</h2>
+        <p class="section-subtitle reveal">Applications, plateformes et outils développés au fil des expériences.</p>
 
-        <div class="project-filters">
+        <div class="project-filters reveal">
           <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="enterprise">Entreprise</button>
+          <button class="filter-btn" data-filter="elearning">E-learning</button>
           <button class="filter-btn" data-filter="laravel">Laravel</button>
           <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="enterprise">Entreprise</button>
         </div>
 
         <div class="projects-grid">
-          <article class="project-card reveal" data-category="laravel">
-            <div class="project-image">
-              <img src="assets/project-visa.jpg" alt="Illustration du projet Technical Multi Service Travel" />
+
+          <!-- CECOSDA FEATURED -->
+          <article class="project-card project-featured reveal" data-category="enterprise elearning">
+            <div class="project-card-inner">
+              <div class="project-visual project-visual-dark">
+                <div class="project-icon-big">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="project-visual-pattern"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="pbadge pbadge-blue">Symfony</span>
+                  <span class="pbadge pbadge-green">LMS ILIAS</span>
+                  <span class="pbadge pbadge-orange">E-learning</span>
+                  <span class="pbadge">En cours</span>
+                </div>
+                <h3>Écosystème Digital CECOSDA</h3>
+                <p>
+                  Pilotage et développement de l'ensemble de la transformation digitale du centre :
+                  applications web métier, plateforme d'e-learning, infrastructure réseau et maintenance.
+                </p>
+                <div class="project-missions">
+                  <div class="mission-item">
+                    <div class="mission-icon"><i class="fa-solid fa-code"></i></div>
+                    <div>
+                      <strong>Applications web métier</strong>
+                      <span>Développement et maintenance de plusieurs applications web en parallèle avec Symfony</span>
+                    </div>
+                  </div>
+                  <div class="mission-item">
+                    <div class="mission-icon"><i class="fa-solid fa-server"></i></div>
+                    <div>
+                      <strong>Déploiement LMS ILIAS</strong>
+                      <span>Configuration, installation et déploiement complet du LMS open-source ILIAS pour la formation</span>
+                    </div>
+                  </div>
+                  <div class="mission-item">
+                    <div class="mission-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div>
+                      <strong>Application e-learning</strong>
+                      <span>Conception, réalisation, développement et maintenance d'une application web d'e-learning dédiée</span>
+                    </div>
+                  </div>
+                  <div class="mission-item">
+                    <div class="mission-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <div>
+                      <strong>Infrastructure réseau & parc IT</strong>
+                      <span>Support, maintenance du parc informatique et intervention sur le réseau serveur</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="project-body">
-              <div class="project-top">
-                <span class="project-badge">Laravel</span>
+          </article>
+
+          <!-- Technical Multi Service Travel -->
+          <article class="project-card reveal" data-category="laravel">
+            <div class="project-card-inner">
+              <div class="project-visual">
+                <div class="project-icon-big"><i class="fa-solid fa-passport"></i></div>
+                <div class="project-visual-pattern"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="pbadge pbadge-blue">Laravel</span>
+                  <span class="pbadge">Immigration & Visa</span>
+                </div>
                 <h3>Technical Multi Service Travel</h3>
+                <p>Application web dédiée aux procédures d'immigration et d'obtention de visa.</p>
+                <ul class="project-list">
+                  <li>Structuration d'un outil métier autour d'un besoin administratif clair</li>
+                  <li>Développement Fullstack et logique applicative</li>
+                  <li>Approche orientée fiabilité et clarté d'usage</li>
+                </ul>
               </div>
-              <p>
-                Application web dédiée aux procédures d’immigration et d’obtention de visa.
-              </p>
-              <ul>
-                <li>Structuration d’un outil métier autour d’un besoin administratif clair</li>
-                <li>Développement backend et logique applicative</li>
-                <li>Approche orientée fiabilité et clarté d’usage</li>
-              </ul>
             </div>
           </article>
 
+          <!-- Vision Bio -->
           <article class="project-card reveal" data-category="laravel">
-            <div class="project-image">
-              <img src="assets/project-visionbio.jpg" alt="Illustration du projet Vision Bio" />
-            </div>
-            <div class="project-body">
-              <div class="project-top">
-                <span class="project-badge">Laravel / E-commerce</span>
+            <div class="project-card-inner">
+              <div class="project-visual project-visual-green">
+                <div class="project-icon-big"><i class="fa-solid fa-leaf"></i></div>
+                <div class="project-visual-pattern"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="pbadge pbadge-green">Laravel</span>
+                  <span class="pbadge">E-commerce</span>
+                  <span class="pbadge">PayPal</span>
+                </div>
                 <h3>Vision Bio</h3>
+                <p>Application e-commerce pour la présentation et la vente de produits bio en ligne.</p>
+                <ul class="project-list">
+                  <li>Gestion de catalogue de produits biologiques</li>
+                  <li>Intégration du paiement PayPal</li>
+                  <li>Interface blog et vitrine produits</li>
+                </ul>
               </div>
-              <p>
-                Application e-commerce pour la présentation et la commercialisation de produits bio.
-              </p>
-              <ul>
-                <li>Gestion de catalogue de produits</li>
-                <li>Présentation claire des offres</li>
-                <li>Base solide pour boutique en ligne</li>
-              </ul>
             </div>
           </article>
 
+          <!-- Agri-fg -->
           <article class="project-card reveal" data-category="laravel">
-            <div class="project-image">
-              <img src="assets/project-agrifg.jpg" alt="Illustration du projet Agri-fg" />
-            </div>
-            <div class="project-body">
-              <div class="project-top">
-                <span class="project-badge">Laravel / AgriTech</span>
+            <div class="project-card-inner">
+              <div class="project-visual project-visual-earth">
+                <div class="project-icon-big"><i class="fa-solid fa-wheat-awn"></i></div>
+                <div class="project-visual-pattern"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="pbadge pbadge-blue">Laravel</span>
+                  <span class="pbadge">AgriTech</span>
+                </div>
                 <h3>Agri-fg</h3>
+                <p>Plateforme permettant aux agriculteurs de valoriser et présenter leurs produits.</p>
+                <ul class="project-list">
+                  <li>Valorisation des producteurs et de leurs offres</li>
+                  <li>Interface de mise en avant des produits agricoles</li>
+                  <li>Projet à impact économique local</li>
+                </ul>
               </div>
-              <p>
-                Application permettant aux agriculteurs de présenter leurs différents produits.
-              </p>
-              <ul>
-                <li>Valorisation des producteurs et de leurs offres</li>
-                <li>Interface de mise en avant des produits</li>
-                <li>Projet à impact économique local</li>
-              </ul>
             </div>
           </article>
 
+          <!-- CSSO -->
           <article class="project-card reveal" data-category="frontend">
-            <div class="project-image">
-              <img src="assets/project-csso.jpg" alt="Illustration du projet CSSO" />
-            </div>
-            <div class="project-body">
-              <div class="project-top">
-                <span class="project-badge">React JS</span>
+            <div class="project-card-inner">
+              <div class="project-visual project-visual-purple">
+                <div class="project-icon-big"><i class="fa-solid fa-diagram-project"></i></div>
+                <div class="project-visual-pattern"></div>
+              </div>
+              <div class="project-body">
+                <div class="project-meta">
+                  <span class="pbadge pbadge-purple">React JS</span>
+                  <span class="pbadge">Modélisation API</span>
+                </div>
                 <h3>CSSO</h3>
+                <p>Application web de modélisation et structuration d'API web développée avec React JS.</p>
+                <ul class="project-list">
+                  <li>Interface ergonomique pour l'organisation de données API</li>
+                  <li>Travail sur la structuration et la lisibilité des endpoints</li>
+                  <li>Projet orienté outillage développeur</li>
+                </ul>
               </div>
-              <p>
-                Application web de modélisation d’API web développée avec React JS.
-              </p>
-              <ul>
-                <li>Travail sur l’ergonomie et l’organisation de données</li>
-                <li>Interface web dédiée à une logique technique</li>
-                <li>Projet orienté structuration d’API</li>
-              </ul>
             </div>
           </article>
 
-          <article class="project-card reveal" data-category="enterprise">
-            <div class="project-image">
-              <img src="assets/project-cecosda.jpg" alt="Illustration des projets actuels chez CECOSDA" />
-            </div>
-            <div class="project-body">
-              <div class="project-top">
-                <span class="project-badge">Symfony / Réseau</span>
-                <h3>Projets en cours chez CECOSDA</h3>
-              </div>
-              <p>
-                Cette carte est pensée pour regrouper plusieurs projets de l’expérience actuelle :
-                maintenance technique, environnement Symfony, infrastructure réseau et solutions internes.
-              </p>
-              <ul>
-                <li>Bloc extensible pour ajouter plusieurs projets actuels</li>
-                <li>Peut être enrichi avec 1 carte par projet réel</li>
-                <li>Idéal quand l’expérience en cours couvre plusieurs missions</li>
-              </ul>
-            </div>
-          </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="skills">
+    <!-- SKILLS -->
+    <section class="section section-dark" id="skills">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Savoir-faire</span>
-          <h2>Compétences techniques</h2>
-        </div>
-
+        <div class="section-label reveal">Savoir-faire</div>
+        <h2 class="section-title reveal">Compétences techniques</h2>
         <div class="skills-grid">
-          <div class="skill-card reveal">
-            <h3>Frontend</h3>
-            <p>HTML, CSS, JavaScript, React JS, Vue JS, Quasar, TailwindCSS, Bootstrap</p>
+
+          <div class="skill-block reveal">
+            <div class="skill-block-head">
+              <i class="fa-solid fa-desktop"></i>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>React JS</span><span>Vue.js</span><span>Quasar</span>
+              <span>TailwindCSS</span><span>Bootstrap</span>
+            </div>
           </div>
-          <div class="skill-card reveal">
-            <h3>Backend</h3>
-            <p>Laravel, Symfony, Ruby on Rails, .NET, Java EE, PHP, Ruby</p>
+
+          <div class="skill-block reveal">
+            <div class="skill-block-head">
+              <i class="fa-solid fa-server"></i>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Laravel</span><span>Symfony</span><span>Ruby on Rails</span>
+              <span>.NET</span><span>Java EE</span><span>PHP</span><span>Ruby</span><span>Python</span>
+            </div>
           </div>
-          <div class="skill-card reveal">
-            <h3>Données & Outils</h3>
-            <p>Postgres, Redis, Sidekiq, Google Drive API, Git, Jira, Bitbucket, Confluence</p>
+
+          <div class="skill-block reveal">
+            <div class="skill-block-head">
+              <i class="fa-solid fa-database"></i>
+              <h3>Données & DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span>PostgreSQL</span><span>MySQL</span><span>Redis</span><span>Sidekiq</span>
+              <span>Git</span><span>Azure</span><span>GitFlow</span>
+              <span>Postman</span><span>Insomnia</span>
+            </div>
           </div>
-          <div class="skill-card reveal">
-            <h3>Autres technologies</h3>
-            <p>Python (IA), C, Blazor, Xtext, Xtend, Windows Server</p>
+
+          <div class="skill-block reveal">
+            <div class="skill-block-head">
+              <i class="fa-solid fa-brain"></i>
+              <h3>IA & Autres</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Python IA</span><span>LMS ILIAS</span><span>Blazor</span>
+              <span>Windows Server</span><span>Xtext</span><span>Xtend</span><span>C</span>
+            </div>
           </div>
+
+          <div class="skill-block reveal">
+            <div class="skill-block-head">
+              <i class="fa-solid fa-people-group"></i>
+              <h3>Collaboration</h3>
+            </div>
+            <div class="skill-tags">
+              <span>Jira</span><span>Confluence</span><span>Bitbucket</span>
+              <span>GitLab</span><span>GitHub</span><span>Google Drive API</span>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section class="section" id="education">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-kicker">Académique</span>
-          <h2>Formation</h2>
+        <div class="section-label reveal">Académique</div>
+        <h2 class="section-title reveal">Formation</h2>
+        <div class="edu-list">
+
+          <div class="edu-item reveal">
+            <div class="edu-year">2022–2024</div>
+            <div class="edu-body">
+              <h3>Master en Informatique — Option Intelligence Artificielle</h3>
+              <p class="edu-school">Université de Dschang · <strong>Mention Bien</strong></p>
+              <p class="edu-desc">Spécialisation en apprentissage automatique, traitement du langage naturel et systèmes intelligents.</p>
+            </div>
+            <div class="edu-badge">M2</div>
+          </div>
+
+          <div class="edu-item reveal">
+            <div class="edu-year">2019–2022</div>
+            <div class="edu-body">
+              <h3>Licence en Informatique Fondamentale</h3>
+              <p class="edu-school">Université de Dschang · <strong>Mention Bien</strong></p>
+              <p class="edu-desc">Algorithmique, structures de données, génie logiciel, bases de données, réseaux et systèmes.</p>
+            </div>
+            <div class="edu-badge">L3</div>
+          </div>
+
+          <div class="edu-item reveal">
+            <div class="edu-year">2019</div>
+            <div class="edu-body">
+              <h3>Baccalauréat Scientifique — Série C</h3>
+              <p class="edu-school">Lycée Manengouba · <strong>Mention Assez Bien</strong></p>
+            </div>
+            <div class="edu-badge">BACC</div>
+          </div>
+
         </div>
+      </div>
+    </section>
 
-        <div class="education-grid">
-          <div class="edu-card reveal">
-            <h3>Master en Informatique — Option IA</h3>
-            <p class="edu-meta">Université de Dschang · Octobre 2022 — Juillet 2024</p>
-            <p>Mention Bien</p>
+    <!-- CONTACT -->
+    <section class="section section-dark" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+          <div class="contact-left reveal">
+            <div class="section-label">Contact</div>
+            <h2 class="section-title">Travaillons<br>ensemble.</h2>
+            <p class="contact-desc">
+              Je suis disponible pour des opportunités freelance, des collaborations techniques
+              ou des postes en développement web, e-learning et systèmes applicatifs.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:manick.nguewouo@gmail.com" class="btn btn-glow">
+                <i class="fa-solid fa-envelope"></i> Envoyer un email
+              </a>
+              <a href="tel:+237690868185" class="btn btn-ghost">
+                <i class="fa-solid fa-phone"></i> Appeler
+              </a>
+            </div>
           </div>
-
-          <div class="edu-card reveal">
-            <h3>Licence en Informatique Fondamentale</h3>
-            <p class="edu-meta">Université de Dschang · Septembre 2019 — Juillet 2022</p>
-            <p>Mention Bien</p>
-          </div>
-
-          <div class="edu-card reveal">
-            <h3>Baccalauréat Scientifique — Série C</h3>
-            <p class="edu-meta">Lycée Manengouba · Juillet 2019</p>
-            <p>Mention Assez Bien</p>
+          <div class="contact-right reveal">
+            <div class="contact-card">
+              <div class="contact-info-item">
+                <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="ci-label">Email</div>
+                  <a href="mailto:manick.nguewouo@gmail.com" class="ci-value">manick.nguewouo@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <div class="ci-label">Téléphone</div>
+                  <a href="tel:+237690868185" class="ci-value">+237 690 868 185</a>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="ci-label">Localisation</div>
+                  <span class="ci-value">Yaoundé, Cameroun</span>
+                </div>
+              </div>
+              <div class="contact-socials">
+                <a href="#" aria-label="LinkedIn" class="social-btn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#" aria-label="GitHub" class="social-btn">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:manick.nguewouo@gmail.com" aria-label="Email" class="social-btn">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="contact">
-      <div class="container contact-box reveal">
-        <div class="contact-text">
-          <span class="section-kicker">Contact</span>
-          <h2>Discutons de votre projet</h2>
-          <p>
-            Je suis disponible pour des opportunités freelance, des collaborations techniques
-            ou des postes en développement web et systèmes applicatifs.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a href="mailto:nguewouom@gmail.com" class="btn btn-primary">
-            <i class="fa-solid fa-envelope"></i>
-            Envoyer un email
-          </a>
-          <a href="tel:+237690868185" class="btn btn-secondary">
-            <i class="fa-solid fa-phone"></i>
-            Appeler
-          </a>
-        </div>
-
-        <div class="social-links">
-          <a href="mailto:nguewouom@gmail.com" aria-label="Email">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="tel:+237690868185" aria-label="Téléphone">
-            <i class="fa-solid fa-phone"></i>
-          </a>
-          <a href="#" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a>
-          <a href="#" aria-label="GitHub">
-            <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© 2026 Nguewouo Mbakop Manick. Tous droits réservés.</p>
-      <a href="#top">Retour en haut</a>
+    <div class="container footer-inner">
+      <a href="#top" class="logo">MN<span class="logo-dot">.</span></a>
+      <p>© 2025 Nguewouo Mbakop Manick. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </footer>
 
