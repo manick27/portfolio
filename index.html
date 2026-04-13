@@ -603,7 +603,11 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <a href="#top" class="logo">MN<span class="logo-dot">.</span></a>
-      <p>© 2025 Nguewouo Mbakop Manick. Tous droits réservés.</p>
+      <p>© 2022 Nguewouo Mbakop Manick. Tous droits réservés.</p>
+      <script>
+        document.querySelector('footer p').textContent = 
+          '© ' + new Date().getFullYear() + ' Nguewouo Mbakop Manick. Tous droits réservés.';
+      </script>
       <div class="footer-links">
         <a href="#about">À propos</a>
         <a href="#projects">Projets</a>
